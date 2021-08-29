@@ -1,38 +1,159 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap');
+body 
+{
+  background-color:rgba(99, 99, 99, 0.2);
+}
+.App 
+{
   text-align: center;
+  width: 60%;
+  background-image: url("https://www.codeur.com/blog/wp-content/uploads/2018/10/codeur-mag-to-do-list-erreurs.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  margin: 50px auto;
+  height:500px;
+  border-radius: 10px;
+  position:relative;
+}
+.App-container
+{
+  position:absolute;
+  width:45%;
+  margin-top:25px;
+  margin-left:410px;
+  background-color:#fee9a7;
+  height:445px;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.Title
+{
+  font-family: 'Dancing Script', cursive;
+  font-size: 40px;
+  margin-bottom: 5px;
+  
+}
+span{
+  font-family: 'Dancing Script', cursive;
+  font-size: 22px;
+  font-weight: 800;
+}
+.plus-button 
+{
+  border: 2px solid lightgrey;
+  background-color: #fff;
+  font-size: 12px;
+  height: 2.5em;
+  width: 2.5em;
+  border-radius: 999px;
+  position: relative;
+  cursor: pointer;
+}
+.plus-button:after,
+.plus-button:before 
+{
+  content: "";
+  display: block;
+  background-color: grey;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.plus-button:before {
+  height: 1em;
+  width: 0.2em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.plus-button:after 
+{
+  height: 0.2em;
+  width: 1em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Addinput 
+{
+  border-style: none;
+  height: 5px;
+  margin-right: 7px;
+  margin-top: 3px;
+  border-radius: 15px;
+  padding:10px;
+}
+
+.FormAdd 
+{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.Item 
+{
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  margin:2px;
+  border-style:none;
+  border-radius: 15px;
+}
+input{
+  border-style:none;
+  border-radius: 5px;
+  text-align:start;
+  font-size: 14px;
+  font-weight: 700;
+}
+.Item:hover{
+  cursor:pointer;
+}
+.todolist
+{
+  display:flex;
+  flex-direction: column;
+  margin:10px 10px;
+}
+.description
+{
+  color:black;
+  margin:7px 10px;
+  width:60%;
+  text-align: start;
+  font-family: 'Kaisei HarunoUmi', serif;
+  height:25px;
+  
+}
+.fas{
+  margin:0 5px;
+  color:black;
+  cursor:pointer;
+}
+.fas:hover{
+  cursor:pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.filternav
+{
+display:flex;
+margin: 10px 60px;
+text-align: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Link {
+  border-style: none;
+  font-size: 15px;
+  border-radius: 5px;
+  font-family: 'Playfair Display', serif;
+  padding:5px;
+  cursor: pointer;
+  margin:0 10px;
+}
+ul 
+{
+  list-style: none;
 }
